@@ -1,0 +1,20 @@
+{
+  "name": "lindskogen.se",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "scripts": {
+    "postinstall": "./node_modules/.bin/webpack -p"
+  },
+  "license": "MIT",
+  "author": "Johan Lindskogen <johan.lindskogen@gmail.com>",
+  "dependencies": {
+    "autoprefixer": "~6.3.1",
+    "css-loader": "~0.23.1",
+    "file-loader": "~0.8.5",
+    "postcss": "~5.0.14",
+    "postcss-loader": "~0.8.0",
+    "precss": "~1.4.0",
+    "style-loader": "~0.13.0",
+    "webpack": "~1.12.13"
+  }
+}

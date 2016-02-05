@@ -1,0 +1,92 @@
+$blue: #438eff;
+$navy: #3572a5;
+$yellow: #f1e05a;
+$text-yellow: #4d4900;
+$cream: #fffdd0;
+$red: #e44b23;
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a, a:active, a:visited {
+    color: $navy;
+}
+
+body {
+    font-family: 'Josefin Sans';
+    background: $blue;
+    color: $text-yellow;
+    display: flex;
+    margin: 0;
+    margin-top: 4%;
+    justify-content: center;
+}
+
+article {
+    background-color: $cream;
+    padding: 6em 6em 0;
+    width: 80%;
+    max-width: 960px;
+    box-shadow: 4px 4px 0px rgba(1, 1, 1, 0.3);
+
+    @media (max-width: 600px) {
+        padding: 2em 2em 0;
+        width: 90%;
+    }
+
+    .nowrap {
+        white-space: pre;
+    }
+}
+
+section {
+    @media (max-width: 600px) {
+        font-size: 1.5em;
+    }
+    padding-bottom: 2em;
+    font-size: 2em;
+
+    .hi-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .photo {
+            width: 150px;
+            height: 150px;
+            background-image: url(me.png);
+            background-repeat: no-repeat;
+            background-size: 150px;
+            background-position: top right;
+
+            @media (min-width: 850px) {
+                background-size: 200px;
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+
+    .hi { font-size: 2em }
+
+    &.letter {
+        white-space: pre-line;
+    }
+
+    &.links {
+
+        font-family: monospace;
+
+        .value { display: none }
+        div { display: block; margin: 0.3em 0; }
+        a:hover {
+            .key { display: none }
+            .value { display: inline }
+        }
+
+    }
+}
+
