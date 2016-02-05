@@ -83,9 +83,9 @@ section {
         .handle { display: none }
         .handle::before { content: "=> " }
 
-        div { display: block; margin: 0.3em 0; }
+        div { margin: 0.3em 0; }
 
-        div:hover {
+        .service:hover {
             .handle { display: inline }
         }
 
