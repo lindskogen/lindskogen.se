@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "My personal website",
   "scripts": {
-    "postinstall": "./node_modules/.bin/webpack -p"
+    "postinstall": "./node_modules/.bin/webpack -p",
+	"start": "./node_modules/.bin/webpack-dev-server --inline --progress --color"
   },
   "license": "MIT",
   "author": "Johan Lindskogen <johan.lindskogen@gmail.com>",
