@@ -16,7 +16,7 @@ a, a:active, a:visited {
 }
 
 html, body, .background-container {
-    height: 100%;
+    min-height: 100%;
 }
 
 body {
