@@ -37,7 +37,7 @@ body {
 
 article {
     background-color: $cream;
-    padding: 6em 6em 0;
+    padding: 2em 6em 0;
     width: 80%;
     max-width: 960px;
     box-shadow: 4px 4px 0px rgba(1, 1, 1, 0.3);
@@ -91,10 +91,7 @@ section {
 
         font-family: monospace;
 
-        .handle { display: none }
-        .handle::before { content: "=> " }
-
-        div { margin: 0.3em 0; }
+        div { margin: 0.3em 2em 0; }
 
         .service:hover {
             .handle { display: inline }
