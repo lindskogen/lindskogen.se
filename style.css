@@ -67,10 +67,11 @@ section {
         .photo {
             width: 150px;
             height: 150px;
-            background-image: url(me.png);
+            background-image: url(me.jpg);
             background-repeat: no-repeat;
             background-size: 150px;
             background-position: top right;
+            border-radius: 50%;
 
             @media (min-width: 850px) {
                 background-size: 200px;

@@ -11,7 +11,7 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.css$/, loader: "style!css!postcss" },
-            { test: /\.png$/, loader: "file" }
+            { test: /\.(jpg|png)$/, loader: "file" }
         ]
     },
     postcss: function() {
