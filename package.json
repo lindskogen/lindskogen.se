@@ -19,6 +19,7 @@
     "webpack": "^2.2.1"
   },
   "devDependencies": {
+    "extract-text-webpack-plugin": "v2.0.0-rc.3",
     "webpack-dev-server": "^2.3.0"
   }
 }
