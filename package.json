@@ -9,16 +9,16 @@
   "license": "MIT",
   "author": "Johan Lindskogen <johan.lindskogen@gmail.com>",
   "dependencies": {
-    "autoprefixer": "~6.3.1",
-    "css-loader": "~0.23.1",
-    "file-loader": "~0.8.5",
-    "postcss": "~5.0.14",
-    "postcss-loader": "~0.8.0",
+    "autoprefixer": "^6.7.2",
+    "css-loader": "^0.26.1",
+    "file-loader": "^0.10.0",
+    "postcss": "^5.2.13",
+    "postcss-loader": "^1.3.0",
     "precss": "~1.4.0",
     "style-loader": "~0.13.0",
-    "webpack": "~1.12.13"
+    "webpack": "^2.2.1"
   },
   "devDependencies": {
-    "webpack-dev-server": "^1.16.2"
+    "webpack-dev-server": "^2.3.0"
   }
 }
