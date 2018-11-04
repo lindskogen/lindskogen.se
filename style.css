@@ -5,6 +5,10 @@ $text-yellow: #4d4900;
 $cream: #fffdd0;
 $red: #e44b23;
 
+$dark-blue: #002f75;
+$dark-cream: #000;
+$dark-text-yellow: #fff;
+
 *,
 *:before,
 *:after {
@@ -25,14 +29,22 @@ body {
     font-family: 'Josefin Sans';
     color: $text-yellow;
     margin: 0;
+
+    @media (prefers-color-scheme: dark) {
+        color: $dark-text-yellow;
+    }
 }
 
 .background-container {
     padding-top: 4%;
     width: 100%;
-    background: $blue;
+    background-color: $blue;
     display: flex;
     justify-content: center;
+
+    @media (prefers-color-scheme: dark) {
+        background-color: $dark-blue;
+    }
 }
 
 article {
@@ -46,6 +58,11 @@ article {
         padding: 2em 2em 0;
         width: 90%;
     }
+
+    @media (prefers-color-scheme: dark) {
+        background-color: $dark-cream;
+    }
+
 
     .nowrap {
         white-space: pre;
