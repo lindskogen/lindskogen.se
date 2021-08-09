@@ -1,4 +1,3 @@
-<!doctype html>
 <html>
     <head>
         <title>Johan Lindskogen</title>
@@ -6,10 +5,127 @@
         <meta name="description" content="Web developer with a vision." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="//fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet" type="text/css">
-        <link href="build/style.css" rel="stylesheet" type="text/css">
-        <link rel="icon" href="build/favicon.png">
-        <meta name="theme-color" content="#438eff" media="(prefers-color-scheme: light)">
-        <meta name="theme-color" content="#002f75" media="(prefers-color-scheme: dark)">
+        <style global lang="scss">
+:root {
+  --body-bg: #438eff;
+  --navy: #3572a5;
+  --text-color: #4d4900;
+  --paper-bg: #fffdd0;
+
+  @media (prefers-color-scheme: dark) {
+    --body-bg: #002f75;
+    --paper-bg: #000;
+    --text-color: #fff;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a,
+a:active,
+a:visited {
+  color: var(--navy);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.background-container {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Josefin Sans";
+  color: var(--text-color);
+  margin: 0;
+}
+
+.background-container {
+  padding-top: 4%;
+  width: 100%;
+  background-color: var(--body-bg);
+  display: flex;
+  justify-content: center;
+}
+
+article {
+  background-color: var(--paper-bg);
+  padding: 2em 6em 0;
+  width: 80%;
+  max-width: 960px;
+  box-shadow: 4px 4px 0px rgba(1, 1, 1, 0.3);
+
+  @media (max-width: 600px) {
+    padding: 2em 2em 0;
+    width: 90%;
+  }
+
+  .nowrap {
+    white-space: pre;
+  }
+}
+
+section {
+  @media (max-width: 600px) {
+    font-size: 1.5em;
+  }
+  padding-bottom: 2em;
+  font-size: 2em;
+
+  .hi-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .photo {
+      width: 150px;
+      height: 150px;
+      background-image: url(/me.jpg);
+      background-repeat: no-repeat;
+      background-size: 150px;
+      background-position: top right;
+      border-radius: 50%;
+
+      @media (min-width: 850px) {
+        background-size: 200px;
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+
+  .hi {
+    font-size: 2em;
+  }
+
+  &.letter {
+    white-space: pre-line;
+  }
+
+  &.links {
+    font-family: monospace;
+
+    div {
+      margin: 0.3em 2em 0;
+    }
+
+    .service:hover {
+      .handle {
+        display: inline;
+      }
+    }
+  }
+}
+</style>
+        <link rel="icon" href="favicon.png">
+        <meta name="theme-color" content="#438eff" media="(prefers-color-scheme: light)"/>
+        <meta name="theme-color" content="#002f75" media="(prefers-color-scheme: dark)"/>
     </head>
     <body>
         <div class="background-container">
@@ -25,7 +141,7 @@
                     I'm a software developer who loves code, coffee and skiing.
                 </section>
                 <section class="links">
-                    {
+                    &#123;
                     <div>
                         <span class="service">
                             "<span class="handle">GitHub</span>":
@@ -50,7 +166,7 @@
                             "<a href="/cv" data-goatcounter-click rel="me" target="_blank" class="nowrap">cv.pdf</a>"
                         </span>
                     </div>
-                    }
+                    &#125;
                 </section>
             </article>
         </div>
