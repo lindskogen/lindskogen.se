@@ -9,6 +9,7 @@
   "license": "MIT",
   "author": "Johan Lindskogen <johan.lindskogen@gmail.com>",
   "devDependencies": {
-    "astro": "1.0.0-beta.7"
+    "astro": "1.0.0-beta.7",
+    "sass": "^1.50.0"
   }
 }
