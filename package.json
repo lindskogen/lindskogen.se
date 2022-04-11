@@ -9,6 +9,6 @@
   "license": "MIT",
   "author": "Johan Lindskogen <johan.lindskogen@gmail.com>",
   "devDependencies": {
-    "astro": "0.20.12"
+    "astro": "1.0.0-beta.7"
   }
 }
