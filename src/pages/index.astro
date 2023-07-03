@@ -1,29 +1,20 @@
+---
+import '@fontsource/josefin-sans/latin-400.css';
+
+---
 <html lang="en">
   <head>
     <title>Johan Lindskogen</title>
     <meta charset="utf-8" />
     <meta name="description" content="Web developer with a vision." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      @font-face {
-        font-family: "Josefin Sans";
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/josefinsans/v17/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQbMZhKSbpUVzEEQ.woff)
-          format("woff");
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-    </style>
     <style is:global lang="scss">
       :root {
         --body-bg: #438eff;
         --navy: #3572a5;
         --text-color: #4d4900;
         --paper-bg: #fffdd0;
-        --accent-color: #7287fd;
+        --accent-color: var(--body-bg);
 
         @media (prefers-color-scheme: dark) {
           --body-bg: #002f75;
@@ -56,14 +47,14 @@
       }
 
       body {
-        font-family: "Josefin Sans";
+        font-family: "Josefin Sans", sans-serif;
         color: var(--text-color);
         margin: 0;
         line-height: 1.4;
       }
 
       .background-container {
-        padding-block-start: 4rem;
+        padding: 4rem 2rem 0;
         background-color: var(--body-bg);
         display: flex;
         justify-content: center;
@@ -79,7 +70,8 @@
         box-shadow: 4px 4px 0px rgba(1, 1, 1, 0.3);
 
         @media (max-width: 850px) {
-          padding: 2em;
+          padding: 4rem;
+          gap: 2rem;
         }
 
         .name {
@@ -136,6 +128,10 @@
 
           @media (max-width: 850px) {
             grid-template-columns: 1fr;
+
+            dd {
+              margin-left: 1rem;
+            }
           }
         }
       }
