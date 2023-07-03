@@ -74,6 +74,11 @@ import '@fontsource/josefin-sans/latin-400.css';
           gap: 2rem;
         }
 
+        @media (max-width: 450px) {
+          padding: 2rem;
+          gap: 2rem;
+        }
+
         .name {
           color: var(--accent-color);
         }
@@ -97,13 +102,18 @@ import '@fontsource/josefin-sans/latin-400.css';
           gap: 1rem;
 
           .photo {
-            flex: 0 1 150px;
+            flex: 0 1 100px;
             aspect-ratio: 1;
             background-image: url(/me.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center center;
             border-radius: 50%;
+
+            @media (min-width: 450px) {
+              flex-basis: 150px;
+            }
+
 
             @media (min-width: 850px) {
               flex-basis: 200px;
