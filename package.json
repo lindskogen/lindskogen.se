@@ -4,7 +4,10 @@
   "description": "My personal website",
   "scripts": {
     "start": "astro dev",
-    "build": "astro build"
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+
   },
   "license": "MIT",
   "author": "Johan Lindskogen <johan.lindskogen@gmail.com>",
